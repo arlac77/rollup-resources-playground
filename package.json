@@ -1,8 +1,8 @@
 {
   "name": "rollup-resources-playground",
   "version": "0.0.0-semantic-release",
-  "description": "common components and utils used in svelte apps",
-    "contributors": [
+  "description": "try rewriting resources",
+  "contributors": [
     {
       "name": "Markus Felten",
       "email": "markus.felten@gmx.de"
@@ -12,10 +12,8 @@
   "scripts": {
     "build": "rollup -c rollup.config.mjs"
   },
-  "dependencies": {
-  },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^13.0.5",
+    "@rollup/plugin-url": "^6.1.0",
     "rollup": "^2.57.0"
   }
 }

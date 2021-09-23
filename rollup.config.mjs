@@ -1,11 +1,16 @@
-import resolve from "@rollup/plugin-node-resolve";
+import url from "@rollup/plugin-url";
 
 export default {
   input: `src/index.mjs`,
   output: {
-    sourcemap: true,
-    format: "esm",
-    file: `${basedir}/public/bundle.main.mjs`
+    dir: "build",
+    format: "cjs"
   },
-  plugins: [resolve({})]
+  plugins: [
+    url({
+      emitFiles: true,
+      destDir: "output",
+      include: ["**/*.md"]
+    })
+  ]
 };

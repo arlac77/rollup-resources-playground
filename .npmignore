@@ -1,0 +1,10 @@
+build
+tests
+rollup.config.*
+doc
+*.log
+*.tmp
+.test
+.tmp
+.vscode
+.github

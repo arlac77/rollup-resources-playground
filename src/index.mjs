@@ -1,5 +1,5 @@
- import x from "./document.md";
+ import x from "../resources/document.md";
 
-const myDocument = new URL("document.md", import.meta.url).pathname;
+const myDocument = new URL("../resources/document.md", import.meta.url).pathname;
 
-console.log("DOCUMENT", myDocument);
+console.log("DOCUMENT", myDocument, x);

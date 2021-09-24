@@ -1,4 +1,4 @@
-import url from "@rollup/plugin-url";
+import smartAsset from "rollup-plugin-smart-asset";
 
 export default {
   input: `src/index.mjs`,
@@ -7,9 +7,9 @@ export default {
     format: "cjs"
   },
   plugins: [
-    url({
+    smartAsset({
       emitFiles: true,
-      destDir: "output",
+      url: "copy",
       include: ["**/*.md"]
     })
   ]

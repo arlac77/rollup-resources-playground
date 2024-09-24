@@ -13,7 +13,7 @@
     "build": "rollup -c rollup.config.mjs"
   },
   "devDependencies": {
-    "rollup": "^2.57.0",
+    "rollup": "^4.22.4",
     "rollup-plugin-smart-asset": "^2.1.2"
   }
 }
